@@ -9,48 +9,50 @@
 </head>
 <body>
     <div class="container-fluid bg-peach">
+        <h6>Timer by default is 20 min</h6>
         <div class="container col-11 col-sm-2 col-md-4 col-xl-2 bg-brown">
             <div class="row d-flex justify-content-center">
                 <div class="bg-light col-8" id="timer">
                     <div class="progresss"></div>
-                   <h1 id="digitalPrint" class="text-info"> 10:00</h1>
+                   <h1 id="digitalPrint"></h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-white  text-center mt-4 mb-4" >Session 1</h1>
+                    <h1 class="text-white  text-center mt-4 mb-4" id="count" >Session 1</h1>
                 </div>
             </div>
             <div class="row">
                 <hr class="break-line">
                 <div class="col-6">
                     <p class="text-white text-center" style="margin-bottom: 5px;">Session Time</p>
-                    <p class="text-center text-info" style="margin-bottom: 10px;">20 min</p>
+                    <p class="text-center text-info" style="margin-bottom: 10px;" id="st">20 min</p>
                     <div class="d-flex justify-content-center pb-3">
-                    <button class="btn btn-dark btn-xs mx-1"><span class="symbol">-</span></button>
-                    <button class="btn btn-dark btn-xs"><span class="symbol">+</span></button>
+                    <button class="btn btn-dark btn-xs mx-1" id="dec" onclick="dec()"><span class="symbol">-</span></button>
+                    <button class="btn btn-dark btn-xs" id="inc" onclick="inc()"><span class="symbol">+</span></button>
                     </div>
                 </div>
                 <div class="col-6">
                     <p class="text-white text-center" style="margin-bottom: 5px;">Break Time</p>
-                    <p class="text-center text-danger" style="margin-bottom: 10px;">5 min</p>
+                    <p class="text-center text-danger" style="margin-bottom: 10px;" id="bt">5 min</p>
                     <div class="d-flex justify-content-center">
-                    <button class="btn btn-dark btn-xs mx-1"><span class="symbol">-</span></button>
-                    <button class="btn btn-dark btn-xs"><span class="symbol">+</span></button>
+                    <button class="btn btn-dark btn-xs mx-1" id="dec1" onclick="dec1()"><span class="symbol">-</span></button>
+                    <button class="btn btn-dark btn-xs" id="inc1" onclick="inc1()"><span class="symbol">+</span></button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <hr class="break-line">
                 <div class="col-6 pb-3 d-flex justify-content-center">
-                    <button class="btn btn-dark">Start</button>
-                    <button class="btn btn-dark" hidden>Pause</button>
+                    <button class="btn btn-dark" id="startbutton" onclick="start()">Start</button>
+                    <button class="btn btn-dark" id="pausebutton" onclick="pause()">Pause</button>
                 </div>
                 <div class="col-6 pb-3 d-flex justify-content-center">
-                    <button class="btn btn-dark">Reset</button>
+                    <button class="btn btn-dark" onclick="reset()">Reset</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="timer.js"></script>
 </body>
 </html>

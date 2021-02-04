@@ -42,7 +42,6 @@
     background: linear-gradient(to right, #39C0ED 99.99%, transparent), linear-gradient(to bottom, #39C0ED 99.99%, transparent), linear-gradient(to right, #39C0ED 99.99%, transparent), linear-gradient(to bottom, #39C0ED 99.99%, transparent);
     background-size: 100% 10px, 10px 100%, 100% 10px, 10px 100%;
     background-repeat: no-repeat;
-    animation: progresss 10s linear forwards 1;
     background-position: -220px 0px, 210px -220px, 220px 209px, 0px 220px;
     position: absolute;
     left: -4.9%;
