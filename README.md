@@ -5,7 +5,7 @@ The Pomodoro is a time management system. The technique uses a timer to break do
 * HTML5
 * CSS
 * JavaScript
-* Bootstrap 4
+* Bootstrap 5
 
 ## ScreenShot
 ![pomo](pomo.png)
